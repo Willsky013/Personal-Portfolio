@@ -8,6 +8,8 @@ import './App.css'
 
 export default function App() {
 
+  const [selected, setSelected] = useState("Projects");
+
   return (
     <>
       <section className="header">
@@ -20,10 +22,32 @@ export default function App() {
           <MovingText text ="This is my personal portfolio showcasing projects i have made or worked on"/>
         </div>
       </section>
-      <section id ="projectDisplay">
-        <h1>Projects</h1>
-        <Projects />
-      </section>
+      <div>
+        <button
+          className={`navButtons ${selected === "Projects" ? "selected" : ""}`}onClick={() => setSelected("Projects")}>Projects
+        </button>
+
+        <button
+          className={`navButtons ${selected === "About" ? "selected" : ""}`}onClick={() => setSelected("About")}>About
+        </button>
+      </div>
+      <div>
+        {selected === "Projects" && (
+          <section id ="projectDisplay">
+            <Projects />
+          </section>
+        )}
+
+        {selected === "About" && (
+          <div className='aboutMe'>
+            <MovingText text ="This is infomation about me"/>
+            <MovingText text ="My name is William Falk Bengtsson"/>
+            <MovingText text ="I like to problemsolve and thinking about how things work"/>
+            <MovingText text ="More infomation coming soon"/>
+          </div>
+        )}
+      </div>
+
       <section className="footer">
         <div id='footer-contactMe'>
           <div>
