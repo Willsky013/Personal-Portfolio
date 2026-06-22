@@ -29,6 +29,7 @@ export default function App() {
           <div>
             <h2>Contact Me</h2>
           </div>
+          <a class="out-link" href="https://github.com/Willsky013" target="_blank">GitHub</a>
           <a class="out-link" href="https://www.linkedin.com/in/william-falk-bengtsson-145a86296/" target="_blank">LinkedIn</a>
           <a class="out-link" href="mailto:13williamfb@gmail.com">Gmail</a>
         </div>

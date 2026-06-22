@@ -57,7 +57,6 @@
 
 /*The footer of the page*/
 .footer{
-
   font-size: 1rem;
   text-align: right;
 
@@ -65,10 +64,10 @@
   border-color: rgb(252, 252, 252);
 }
 #footer-contactMe{
-  margin-right: 1%;
+  margin: 0.5rem 1rem auto auto;
 }
 .out-link{
-  margin: 1rem 0.3rem;
+  margin: 1rem auto 1rem 0.5rem;
 }
 
 /*Old Css for reference*/
